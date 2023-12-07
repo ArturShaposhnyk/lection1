@@ -1382,3 +1382,658 @@ fieldset {
     background-color: var(--light-orange);
     color: var(--orange);
 }
+
+
+
+
+
+
+
+/** -------------------- Mobile -------------------- */
+
+@media screen and (min-width: 375px) {
+    :root {
+        --container-width: var(--mobile-container-width);
+    }
+
+    /*? -------------------- HERO -------------------- */
+
+    .hero-buttons {
+        gap: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-button {
+        margin-right: 14px;
+    }
+
+    .hero-down {
+        margin-top: 32px;
+    }
+
+    /*? -------------------- Footer -------------------- */
+
+    .subscribe-form {
+        flex-wrap: nowrap;
+    }
+
+    .subscribe-input-wrap {
+        width: 207px;
+    }
+}
+
+
+
+/** -------------------- Tablet -------------------- */
+
+
+
+@media screen and (min-width: 768px) {
+    :root {
+        --container-width: var(--tablet-container-width);
+        --hero-background-image-1x: url(../images/hero/chocolate-hero-tablet.jpg);
+        --hero-background-image-2x: url(../images/hero/chocolate-hero-tablet-2x.jpg);
+        --hero-background-image-3x: url(../images/hero/chocolate-hero-tablet-3x.jpg);
+    }
+
+    .section {
+        padding-bottom: 100px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
+
+    /** -------------------- HEADER -------------------- */
+
+    .header-logo {
+        padding-top: 24px;
+        padding-bottom: 35px;
+    }
+
+    .header-menu {
+        display: flex;
+        /* Space between menu items */
+        gap: 24px;
+    }
+
+    .header-menu-link {
+        display: block;
+        height: 100%;
+        color: var(--black);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        transition: color var(--transition-time) var(--transition-function);
+        padding-top: 27px;
+        padding-bottom: 38px;
+    }
+
+    .header-menu-link:is(:hover, :focus) {
+        color: var(--orange);
+    }
+
+    .header-socials {
+        display: flex;
+        padding-top: 25px;
+        padding-bottom: 36px;
+        gap: 12px;
+    }
+
+    .header-socials-link {
+        display: flex;
+    }
+
+    .header-socials-icon {
+        transition: stroke var(--transition-time) var(--transition-function);
+        stroke: var(--black);
+        fill: none;
+        width: 20px;
+        height: 20px;
+    }
+
+    .header-socials-link:is(:hover, :focus) .header-socials-icon {
+        stroke: var(--orange);
+    }
+
+    /*? -------------------- Menu -------------------- */
+
+    .header-menu>li:nth-child(n+4) {
+        display: none;
+    }
+
+    .menu-open-button {
+        display: none;
+    }
+
+    /*? -------------------- HERO -------------------- */
+
+    .hero {
+        padding-bottom: 40px;
+    }
+
+    .hero-container {
+        padding: 671px 40px 40px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-button,
+    .hero-link {
+        padding: 14px 40px;
+    }
+
+    .hero-down {
+        margin-left: auto;
+        margin-top: 0;
+        gap: 14px;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    .hero-down-arrow {
+        width: 38px;
+        height: 38px;
+    }
+
+    .hero-down-icon {
+        width: initial;
+        height: initial;
+    }
+
+    /*? -------------------- ADVANTAGES -------------------- */
+
+    .advantages {
+        padding: 50px 0 85px;
+    }
+
+    .advantages-list {
+        gap: 44px 88px;
+    }
+
+    .advantages-item {
+        width: calc((100% - 88px) / 2);
+    }
+
+    /*? -------------------- Taste -------------------- */
+
+    .taste {
+        padding-top: 100px;
+    }
+
+    .taste-title {
+        max-width: 411px;
+    }
+
+    .taste-description {
+        margin-bottom: 50px;
+    }
+
+    .taste-list {
+        gap: 32px;
+    }
+
+    .taste-item {
+        width: calc((100% - 32px) / 2);
+        order: 5;
+    }
+
+    .taste-item:nth-child(1) {
+        order: 1;
+    }
+
+    .taste-item:nth-child(2) {
+        order: 3;
+    }
+
+    .taste-item:nth-child(3) {
+        order: 4;
+    }
+
+    .taste-item:nth-child(4) {
+        order: 2;
+    }
+
+    /*? -------------------- Made -------------------- */
+
+    .made>.container {
+        max-width: 644px;
+    }
+
+    .made-content {
+        padding: 32px;
+    }
+
+    .made-play-icon {
+        width: inherit;
+        height: inherit;
+    }
+
+    .made-head {
+        margin-bottom: 28px;
+    }
+
+    .made-list {
+        max-width: 464px;
+    }
+
+    /*? -------------------- Products -------------------- */
+
+    .products-list {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .product-item {
+        width: calc((100% - 32px) / 2);
+        padding: 32px 53px;
+    }
+
+    /*? -------------------- Top Sellers -------------------- */
+
+    .top-sellers-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .top-seller-item {
+        width: calc((100% - 16px) / 2);
+    }
+
+    .top-seller-image {
+        max-width: 344px;
+    }
+
+    .top-seller-description {
+        padding: 178px 32px 0;
+    }
+
+    .top-seller-title {
+        padding: 28px 0;
+    }
+
+    /*? -------------------- Loved -------------------- */
+
+    .loved-title {
+        margin-bottom: 91px;
+    }
+
+    .loved-list {
+        column-gap: 16px;
+        margin-bottom: 50px;
+    }
+
+    .loved-list-item {
+        width: calc((100% - 16px) / 2);
+    }
+
+    .loved-button {
+        font-size: 18px;
+        padding: 14px 40px;
+    }
+
+    /*? -------------------- Footer -------------------- */
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-title {
+        font-size: 28px;
+        line-height: 1.21;
+        margin-bottom: 0;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        margin-bottom: 24px;
+    }
+
+    .footer-contacts {
+        flex-direction: row;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-navigation {
+        margin-bottom: 0;
+    }
+
+    .footer-menu {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .footer-menu>li:nth-child(n+4) {
+        display: none;
+    }
+
+    .subscribe-input-wrap {
+        width: 233px;
+    }
+
+    .subscribe-button {
+        padding: 14px 28px;
+    }
+
+    /*? -------------------- Modal -------------------- */
+
+    .modal {
+        min-height: 794px;
+        padding: 40px;
+        max-width: 517px;
+    }
+
+    .modal-close-button {
+        width: 28px;
+        height: 28px;
+        top: 24px;
+        right: 24px;
+    }
+
+    .modal-title {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 42px;
+    }
+
+    .modal-field {
+        margin-bottom: 18px;
+    }
+
+    .modal-label {
+        margin-bottom: 8px;
+    }
+
+    .modal-input {
+        height: 68px;
+        padding-left: 62px;
+        font-size: 18px;
+    }
+
+    .modal-input-icon {
+        left: 24px;
+        width: initial;
+        height: initial;
+    }
+
+    .modal-input-invalid-icon {
+        right: 26px;
+        width: initial;
+        height: initial;
+    }
+
+    .modal-text-area {
+        height: 137px;
+        padding: 22px 24px;
+    }
+
+    .modal-terms {
+        font-size: 14px;
+        padding-left: 46px;
+    }
+
+    .modal-terms span {
+        display: none;
+    }
+
+    .modal-terms::before {
+        display: block;
+        width: 40px;
+        height: 22px;
+    }
+
+    .modal-terms::after {
+        display: block;
+        width: 18px;
+        height: 18px;
+        top: 0.5px;
+    }
+
+    .modal-checkbox:checked+.modal-terms::after {
+        transform: translate(18px);
+    }
+
+    .modal-terms-link {
+        padding-left: 3px;
+    }
+
+    .modal-submit {
+        padding: 14px 40px;
+    }
+}
+
+
+
+/** -------------------- Desktop -------------------- */
+
+
+
+@media screen and (min-width: 1166px) {
+    :root {
+        --container-width: var(--desktop-container-width);
+        --hero-background-image-1x: url(../images/hero/chocolate-hero.jpg);
+        --hero-background-image-2x: url(../images/hero/chocolate-hero-2x.jpg);
+        --hero-background-image-3x: url(../images/hero/chocolate-hero-3x.jpg);
+    }
+
+    .section {
+        padding-bottom: 120px;
+    }
+
+    /** -------------------- HEADER -------------------- */
+    .header-container {
+        /* Gap between navigation and socials */
+        gap: 90px;
+    }
+
+    .header-logo {
+        padding-bottom: 32px;
+        font-size: 18px;
+        line-height: 1.12;
+    }
+
+    .header-menu-link {
+        padding-top: 28px;
+        padding-bottom: 36px;
+    }
+
+    .header-socials {
+        padding-top: 24px;
+        padding-bottom: 32px;
+        /* Space between socials */
+        gap: 14px;
+    }
+
+    .header-socials-icon {
+        width: initial;
+        height: initial;
+    }
+
+    /*? -------------------- Menu -------------------- */
+
+    .header-menu>li:nth-child(n+4) {
+        display: block;
+    }
+
+    /*? -------------------- HERO -------------------- */
+
+    .hero-container {
+        padding: 380px 40px 40px 40px;
+    }
+
+    /*? -------------------- ADVANTAGES -------------------- */
+
+    .advantages {
+        padding-bottom: 50px;
+    }
+
+    .advantages-list {
+        padding: 0 18px;
+        gap: 88px;
+    }
+
+    .advantages-item {
+        width: calc((100% - 88px * 2) / 3);
+    }
+
+    .advantages-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: -44px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 124px;
+        width: 1px;
+        background-color: var(--white);
+        opacity: 0.5;
+    }
+
+    .advantages-icon-container {
+        margin-bottom: 19px;
+    }
+
+    /*? -------------------- Taste -------------------- */
+
+    .taste {
+        padding-top: 120px;
+    }
+
+    .taste-list {
+        row-gap: 24px;
+    }
+
+    .taste-item {
+        width: calc((100% - 32px * 3) / 4);
+    }
+
+    .taste-item:nth-child(n) {
+        order: initial;
+    }
+
+    .taste-item-image {
+        margin-bottom: 36px;
+        width: 214px;
+        height: 160px;
+    }
+
+    .taste-item-cover-container {
+        padding: 20px 15px;
+    }
+
+    /*? -------------------- Made -------------------- */
+
+    .made>.container {
+        max-width: var(--container-max-width);
+    }
+
+    .made-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .made-image-container {
+        margin-bottom: 0;
+    }
+
+    .made-content {
+        max-width: 516px;
+        padding: 32;
+    }
+
+    .made-head {
+        min-width: 360px;
+        padding-bottom: 0;
+    }
+
+    .made-list {
+        max-width: 429px;
+    }
+
+    .made-list-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    /*? -------------------- Products -------------------- */
+
+    .products-list {
+        gap: 18px;
+    }
+
+    .product-item {
+        width: calc((100% - 18px * 3) / 4);
+        padding: 32px 20px;
+    }
+
+    /*? -------------------- Top Sellers -------------------- */
+
+    .top-seller-item {
+        width: calc((100% - 16px * 2) / 3);
+    }
+
+    .top-seller-image {
+        max-width: inherit;
+    }
+
+    .top-seller-description {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /*? -------------------- Loved -------------------- */
+
+    .loved-list {
+        column-gap: 28px;
+    }
+
+    .loved-list-item {
+        width: calc((100% - 28px * 2) / 3);
+    }
+
+    /*? -------------------- Footer -------------------- */
+
+    .footer-contacts {
+        gap: 50px;
+    }
+
+    .footer-socials-list {
+        gap: 14px;
+    }
+
+    .footer-menu {
+        gap: 24px;
+    }
+
+    .footer-menu>li:nth-child(n+4) {
+        display: block;
+    }
+
+    .subscribe-input-wrap {
+        width: 313px;
+    }
+
+    .subscribe-input {
+        height: 52px;
+    }
+
+    .subscribe-input-label,
+    .subscribe-input::placeholder {
+        font-size: 18px;
+    }
+
+    .subscribe-button {
+        padding: 17px 32px;
+    }
+}
